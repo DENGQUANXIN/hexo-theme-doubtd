@@ -1,5 +1,9 @@
 # hexo-theme-doubtd
 
+## Preview link
+
+[dengquanxin.github.io](https://dengquanxin.github.io)
+
 ## A very simple hexo theme
 
 Refer to the default theme (landscape).
