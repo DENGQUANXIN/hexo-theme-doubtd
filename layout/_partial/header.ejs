@@ -1,0 +1,41 @@
+<header id="header">
+  <div id="header-banner">
+    <h1 id="title-wrap">
+      <a href="<%- url_for() %>" id="title"><%= theme.title %></a>
+    </h1>
+    <p id="slogan-wrap">
+      <a href="<%- url_for() %>" id="slogan"><%= theme.subtitle %></a>
+    </p>
+  </div>
+  <div id="header-social">
+    <ul class="list-inline text-center">
+      <% if (theme.zhihu_username) { %>
+      <li>
+          <a target="_blank" href="https://www.zhihu.com/people/<%= config.zhihu_username %>">
+                          <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-zhihu"></i>
+                          </span>
+          </a>
+      </li>
+      <% } %>
+      <% if (theme.weibo_username) { %>
+      <li>
+          <a target="_blank" href="http://weibo.com/<%= config.weibo_username %>">
+                          <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-weibo"></i>
+                          </span>
+          </a>
+      </li>
+      <% } %>
+      <% if (theme.github_username) { %>
+      <li>
+          <a target="_blank"  href="https://github.com/<%= config.github_username %>">
+                          <span class="fa-stack fa-lg">
+                              <i class="iconfont icon-github"></i>
+                          </span>
+          </a>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+</header>
